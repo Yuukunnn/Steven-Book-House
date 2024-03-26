@@ -1,0 +1,64 @@
+@import "./variable";
+
+body {
+    background-image: url(./Pics/bookstore.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    border: 2px solid $secondary-color;
+    text-align: center;
+    color: $secondary-color;
+    background-color: $primary-color;
+    opacity:$primary-opacity;
+    font-size: 240%;
+}
+
+
+p {
+    text-align: left;
+    color: $primary-color;
+    background-color: $secondary-color;
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 160%;
+}
+
+.booksContainer {
+    display:grid;
+    justify-content: center;
+    row-gap: 8%;
+
+    .bookDetails {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+
+    a { background-color: $secondary-color;
+        color: $primary-color;
+        opacity: $primary-opacity;
+        font-size: $primary-font-size;
+        font-weight: bolder;
+        font-style: italic;
+    }
+}
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:20%;
+
+    a {
+        color:$primary-color;
+        font-size: $primary-font-size;
+    }
+}

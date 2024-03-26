@@ -1,0 +1,58 @@
+body {
+  background-image: url(./Pics/bookstore.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  background-color: rgb(239, 231, 231);
+  opacity: 0.8;
+  font-size: 240%;
+}
+
+p {
+  text-align: left;
+  color: rgb(239, 231, 231);
+  background-color: black;
+  opacity: 0.6;
+  font-style: italic;
+  font-size: 160%;
+}
+
+.booksContainer {
+  display: grid;
+  justify-content: center;
+  row-gap: 8%;
+}
+.booksContainer .bookDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 10px;
+}
+.booksContainer .bookDetails a {
+  background-color: black;
+  color: rgb(239, 231, 231);
+  opacity: 0.8;
+  font-size: 100%;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+}
+footer a {
+  color: rgb(239, 231, 231);
+  font-size: 100%;
+}/*# sourceMappingURL=BookHouse.css.map */
