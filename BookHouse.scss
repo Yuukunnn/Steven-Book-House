@@ -1,9 +1,20 @@
 @import "./variable";
 
 body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.background_image{
     background-image: url(./Pics/bookstore.jpeg);
     background-size: cover;
-    background-position: center;
+    position: fixed;
+    top: 0;
+    height:100vh;
+    width:100%;
+    opacity:0.8;
+    z-index: -1;
 }
 
 h1 {
@@ -12,17 +23,22 @@ h1 {
     color: $secondary-color;
     background-color: $primary-color;
     opacity:$primary-opacity;
-    font-size: 240%;
+    font-size: 4em;
 }
 
 
 p {
-    text-align: left;
+    width:90%;
+    position:relative;
+    left:5%;
+    text-align: center;
     color: $primary-color;
     background-color: $secondary-color;
     opacity: 0.6;
     font-style: italic;
-    font-size: 160%;
+    font-size: 1.5em;
+
+
 }
 
 .booksContainer {
@@ -34,15 +50,19 @@ p {
         display:flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
         row-gap: 10px;
 
-    a { background-color: $secondary-color;
-        color: $primary-color;
+    a { 
+        border: 2px solid $secondary-color;
+        background-color:$primary-color;
+        color:$secondary-color;
         opacity: $primary-opacity;
         font-size: $primary-font-size;
-        font-weight: bolder;
+        text-decoration: none;
+        padding:1%;
+        width:210px;
         font-style: italic;
+        text-align: center;
     }
 }
 
@@ -60,5 +80,6 @@ footer {
     a {
         color:$primary-color;
         font-size: $primary-font-size;
+        text-decoration: none;
     }
 }
